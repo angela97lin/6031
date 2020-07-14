@@ -1,0 +1,4 @@
+fruits = banana@yellow, strawberry@red; 
+vegetables = sweet@potato, kale@superfood; 
+korean = bibim@bap, kim@bap; 
+food = fruits, vegetables, korean

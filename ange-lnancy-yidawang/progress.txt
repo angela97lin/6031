@@ -1,0 +1,168 @@
+April 13th, 2017:
+	* Created and wrote basic specifications for our Parser. Currently, the specifications
+	do not fully cover cases such as "!" and "*", but only cover the small subset of list expressions
+	necessary for the warm-up: email addresses separated by commas. 
+	* Added the basic specifications for our interactive frontend for parser and interpreter to take in a 		
+	string of emails separated by commas and return a set of emails parsed from input.
+	- AL
+
+	* Created test file for frontend and wrote partitions.
+	- NL
+============================================================================================================
+April 14th, 2017:
+	
+	IN CLASS: Checked in with each other and Lily about progress.
+			  Discussed the basics of the grammar that should be used for Parser.
+			  
+    -------------------------------------------------------------------------------
+	* Updated and added new partitions for tests for Parser (whitespaces, consisting of only symbols, etc.)
+	* FOR DISCUSSION: are emails consisting of only symbols 'valid'? (ex: ------@mit.edu)
+	
+	(Yet to implement because we have not written our Parser fxn specs yet!!)
+	- AL
+	
+	*made Norn (will house parser and AST)
+	-YD
+	
+	* Created grammar file: Grammar.g.
+	* Need to figure out how to handle dashes, periods, and underscores in grammar
+	* wrote basic specs for AST, added makeParser method and passed in Grammar.g file and made enum.
+	- NL
+============================================================================================================
+April 15th, 2017
+	
+	* Met as a group to discuss our ADT via the functions it should have, and specified variants of our
+	  ListExpression; all design choices can be found in the design.txt file.
+	  
+============================================================================================================
+April 16th, 2017
+	
+	* Added define() to ListExpression interface.
+	* Created the variants necessary to complete the warmup;
+	Empty and EmailAddress; all specs/rep invariants/AF are yet to be filled in!!
+	* Slightly changed grammar with Nancy to better accommodate 
+	functionality later.
+	* Filled in the bodies of ParserTest test functions. 
+	- AL
+	
+	* Finished parser code (? hopefully), fixed grammar to support unions
+	* Started writing test cases for frontend, but need to see code before tests can be implemented.
+	- NL 
+	
+============================================================================================================
+April 17th, 2017
+	* Added Union variant after realizing it is probably necessary, even for the warmup!
+	* Wrote basic outline to create AST from parse tree.
+	* Wrote specifications for the variants of ListExpression,
+	  including rep invariants, abstract functions, safety from
+	  rep exposure, and specifications for methods
+	* Synced up with Nancy about parser tests and made sure that all
+	  of parser tests are correct.
+	  - AL
+	
+	* Fixed grammar so parser works now
+	- NL
+	
+	* wrote listexpression tests. am skipping all tests to do with difference and intersection
+	* renamed progess to progress
+	* revised specs for list expression parser
+	* finished writing frontend (for warmup)
+	* fixed spelling errors in listexpressiontest
+	* todo: spelling and grammar
+	- YD
+
+	* Basic tests for main method/frontend done.
+	- NL
+	
+============================================================================================================
+April 18th, 2017
+	* Did basic cleanup of code, added checkRep for Email to ensure that
+	only valid emails are okay.
+	* Clarified specification of variant methods.
+	- AL
+	
+	* cleaned up main
+	- YD
+	
+============================================================================================================
+April 19th, 2017
+	* Met as group to discuss pushing deadlines forward, and updated team contract.
+	-------------------------------------------------------------------
+	* Added skeletons for Intersection, Difference, and Sequence variants.
+	* Updated partitions to ParserTest for sequencing, intersection, difference.
+	* Changed define() function name to getEmailRecipients() to better reflect functionality of method.
+	* Added getDefinedMailingLists() to ListExpression interface so we can retrieve defined mailing lists.
+	* Added ADT DefinedMailingList to represent and store list expressions that have been given mailing list names
+	- AL
+	
+	
+	
+============================================================================================================
+April 20th, 2017
+
+	* Updated makeAST code to handle Difference, Intersection, Sequence.
+	* Updating DefinedMailingLists ADT~
+	* Cleaned up and completed specs for all AST variants / methods currently implemented.
+	
+	- AL
+
+	* Re-wrote/updated grammar to handle sequence, difference, mailinglist and intersection.
+		--> valid mailing list names??
+	* Finishing up specs for AST
+	* More partitions to frontend
+	* Wrote more test cases to cover differences between sets, intersections of sets, sequencing
+	* and defining mailing lists
+	- NL
+
+	* updated partitions for AST
+	* changed specs in parser (what is legal)
+	- YD
+	
+============================================================================================================
+April 21th, 2017
+	
+	* Fixed grammar once again. Root should only contain one sequence, fixed mailing list definitions
+	* Working on making grammar able to parse parenthesis.
+	* Added PAREN to ENUM and AST
+	* Added USERNAME to grammar so parser doesn't confuse that with NAME, parenthesis now are okay
+	* Fixed PAREN in AST, changed SEQUENCE case to UNION in PAREN
+	* --> we decided that the cases (a=b) and (a;b) are valid, but not (a=b),(b=c) (nested definitions) and
+	* (a;b),(b;c) (violates precedence order)
+	* AL added DefinedMailingLists as param norn.Main.parseEmailRecipients, so fixed test cases for frontend
+	- NL
+	
+	* Worked with NL to complete grammar, as well as clean up and fix AST.
+	* Completed all test cases for Parser
+	* Implemented mutable ADT to store all previously defined mailing lists,
+	  and implemented in Main so that our command-line will keep track.
+	* Cleaned up all files, code, and specifications.
+	- AL
+	
+	* added more tests
+	- YD
+	
+============================================================================================================
+April 22th, 2017
+	
+	* Finishing up frontend test cases
+	- NL
+	
+	* more AST tests, many more
+	- YD
+	
+============================================================================================================
+April 23th, 2017
+	
+	* many many more AST tests. should be final now
+	YD
+	
+	
+============================================================================================================
+April 24th, 2017
+	
+	
+	
+	
+	
+	
+	

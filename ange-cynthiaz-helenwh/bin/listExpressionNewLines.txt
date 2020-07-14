@@ -1,0 +1,2 @@
+a = apple@banana;
+b = a, cherry@dragonfruit

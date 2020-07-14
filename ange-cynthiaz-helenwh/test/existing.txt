@@ -1,0 +1,1 @@
+6.036 = helen@mit.edu, cynthia@mit.edu;6.031 = angela@mit.edu, helen@mit.edu, cynthia@mit.edu;6.004 = angela@mit.edu

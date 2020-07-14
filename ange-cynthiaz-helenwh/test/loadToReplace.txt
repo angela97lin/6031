@@ -1,0 +1,1 @@
+daysUntilSummerBreak = 12@days, 6@hours, 40@minutes
